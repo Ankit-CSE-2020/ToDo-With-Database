@@ -1,0 +1,49 @@
+<%- include('./partials/header',{name:username}) %>
+    
+    <div class="mainContainer">
+        
+        <div class="leftpart">
+            <div  class="leftpart1">
+                <h2 >TASK LIST</h2>
+                <p>Add tasks to your list by typing to the right and pressing enter. You may then view pending tasks below.</p>
+            </div>
+
+            <div  class="leftpart2">
+                 <ul  id="parentUl" class="list-items">
+                    
+                     <% todos.forEach(function(todo){ %>
+                         <li id="chiledLi" > 
+                              <span id="userTask"><%= todo.text %></span>
+                              <span id="deleteData" class="floatRight" >X</span>
+                              <input id="check" class="floatRight" type="checkbox" id="getCheckbox">
+                              <img class="floatRight" style="width:20px; height:15px " src="<%= todo.taskpic %>"  alt=" "> 
+                            </li>
+                     <% }) %>
+                 
+                 </ul>
+            </div>
+        </div>
+        
+        <div class="rightpart">
+
+               <form action="/todohome" method="post" enctype="multipart/form-data">
+                <input id="taskTodo"   class="todoTask" name="taskUser" type="text" placeholder="I need to...">
+               <br>
+               <br>
+               <input type="file" name="pic" id="pic">
+               <br>
+               <br>
+               <button type="submit">Sumbit</button>
+               </form>
+        </div>
+       
+    </div>
+    
+    <script>
+ 
+        
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

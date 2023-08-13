@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    background-color:rgb(85, 136, 118);
+     margin:0rem 0.5rem ;
+     padding:1.5rem;
+}
+
+
+.mainContainer{
+    display: flex;
+    padding: 0rem 0.5rem;
+}
+
+.leftpart{
+    background-color: rgb(224, 212, 190);
+    padding: 1rem;
+}
+
+
+
+.leftpart1 p{
+    font-size: small;
+}
+
+.leftpart2{
+    margin-top: 0.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+.task{
+    
+    margin-right: 1vw;
+   
+}
+
+.flo1{
+    margin: 0.19rem 0.2rem;
+ 
+}
+
+.floatRight{
+    float: right;
+    margin: 0rem 0.2rem;
+}
+
+.cut{
+       text-decoration:line-through;
+}
+
+
+
+.rightpart{
+    padding: 1rem;
+}
+
+.todoTask{
+ font-weight: 800;
+  border: none;
+  font-size: xx-large;
+
+}
+
+.todoTask:focus{
+   
+    outline: none;
+}
+
